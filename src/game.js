@@ -184,10 +184,15 @@ async function init() {
 
     function handleInput() {
         const direction = new THREE.Vector3();
-        if (keys['w']) direction.y += 1;
-        if (keys['s']) direction.y -= 1;
-        if (keys['a']) direction.x -= 1;
-        if (keys['d']) direction.x += 1;
+        if (keys['w']) {
+            direction.y += 1;
+        } else if (keys['s']) {
+            direction.y -= 1;
+        } else if (keys['a']) {
+            direction.x -= 1;
+        } else if (keys['d']) {
+            direction.x += 1;
+        }
         player.move(direction);
     }
 
