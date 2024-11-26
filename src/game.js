@@ -200,7 +200,7 @@ async function init() {
 
     let gameOver = false;
 
-    // Animation loop
+    // Animation loop dgs
     function animate() {
         if (gameOver) return;
 
